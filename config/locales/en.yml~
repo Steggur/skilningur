@@ -210,15 +210,13 @@ en:
     pm: pm
   views:
     shared:
-      navbar:
-        understanding: "Understanding"
+      topbar:
         home: "Home"
-        about_us: "About us"
+        about: "About us"
         services: "Services"
         solutions: "Solutions"
         contact_us: "Contact us"
         blog: "Blog"
         clients: "Clients"
         team: "Our team"
-        english: "Íslenska"
 

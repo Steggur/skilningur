@@ -3,4 +3,12 @@ Rails.application.routes.draw do
 
   # Serve websocket cable requests in-process
   # mount ActionCable.server => '/cable'
+  scope "(:locale)", :locale => /en|is/ do
+ 
+    root :to => "pages#home"
+
+    get 'pages/about'
+    get 'pages/home'
+
+  end
 end

@@ -1,0 +1,32 @@
+<nav class="navbar navbar-fixed-top navbar-light bg-faded" role="navigation">
+  <%= link_to(t('views.shared.navbar.understanding'), root_path, class: "navbar-brand") %>
+  <div class="nav navbar-nav">
+    <%= link_to(t('views.shared.navbar.home'), pages_home_path, class: "nav-item nav-link active") %>
+    <%= link_to(t('views.shared.navbar.about_us'), pages_about_path, class: "nav-item nav-link") %>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><%= t('views.shared.navbar.services') %></a>
+      <div class="dropdown-menu" aria-labelledby="Preview">
+        <a class="dropdown-item" href="#">Dropdown Link 1</a>
+        <a class="dropdown-item" href="#">Dropdown Link 2</a>
+        <a class="dropdown-item" href="#">Dropdown Link 3</a>
+      </div>
+    </li>
+        <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><%= t('views.shared.navbar.solutions') %></a>
+      <div class="dropdown-menu" aria-labelledby="Preview">
+        <a class="dropdown-item" href="#">Dropdown Link 1</a>
+        <a class="dropdown-item" href="#">Dropdown Link 2</a>
+        <a class="dropdown-item" href="#">Dropdown Link 3</a>
+      </div>
+    </li>
+    <%= link_to(t('views.shared.navbar.contact_us'), pages_about_path, class: "nav-item nav-link") %>
+    <%= link_to(t('views.shared.navbar.blog'), pages_about_path, class: "nav-item nav-link") %>
+    <%= link_to(t('views.shared.navbar.clients'), pages_about_path, class: "nav-item nav-link") %>
+    <%= link_to(t('views.shared.navbar.team'), pages_about_path, class: "nav-item nav-link") %>
+    <%=
+      link_to_unless I18n.locale == :is, t('views.shared.navbar.english'), { locale: :is }, { class: "nav-item nav-link pull-xs-right" } do
+        link_to_unless I18n.locale == :en, t('views.shared.navbar.english'), { locale: :en }, { class: "nav-item nav-link pull-xs-right" }
+      end
+    %>
+  </div>
+</nav>

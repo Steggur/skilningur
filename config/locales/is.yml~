@@ -216,14 +216,13 @@ is:
     pm: ''
   views:
     shared:
-      navbar:
-        understanding: "Skilningur"
+      topbar:
         home: "Heim"
-        about_us: "Um okkur"
+        about: "Um okkur"
         services: "Þjónusta"
         solutions: "Lausnir"
         contact_us: "Hafa samband"
         blog: "Blogg"
         clients: "Viðskiptavinir"
         team: "Okkar teymi"
-        english: "English"
+

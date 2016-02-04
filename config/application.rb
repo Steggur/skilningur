@@ -11,5 +11,7 @@ module Skilningur
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
+    # set default locale to something other than :en
+	config.i18n.default_locale = :is
   end
 end
